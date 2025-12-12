@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% from 'bootstrap5/form.html' import render_form %}
     <header class="flex-grow-1 d-flex align-items-center py-5 mt-5">
         <div class="container-xl px-4 px-md-5 py-5">
             <div class="row justify-content-center">
@@ -8,9 +9,10 @@
                     <h1 class="display-4 fw-bolder lh-1 text-dark mb-4">
                         Get in Touch
                     </h1>
-                    <p class="lead text-secondary mx-auto mb-4" style="max-width: 600px;">
-                        Whether you have a question, want to collaborate, or just want to say hello, feel free to reach out!
-                    </p>
+                    <div class="card border border-light-subtle shadow-sm rounded-4 p-4 p-md-5 bg-white">
+                        {{ render_form(form, button_style="primary fw-bold w-100 py-3 rounded-3") }}
+                        
+                    </div>
                     <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
                         
 {% endblock %}                       
