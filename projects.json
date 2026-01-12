@@ -22,10 +22,10 @@
     },
     {
         "title": "Personal Portfolio Website",
-        "description": "A personal portfolio website built with Flask. It's the website you are currently one.",
+        "description": "A personal portfolio website built with Flask and email notifications. It's the website you are currently one.",
         "image_url": "static/images/blog_website.png",
         "language": "Python",
-        "project_url": "#"
+        "project_url": "https://github.com/jsn-afons/portfolio_website.git"
     },
     {
         "title": "Fifa Ultimate Team Price tracker",
