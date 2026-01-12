@@ -44,6 +44,7 @@ def contact():
         # Here you would typically handle the form submission
 
 
+
     return render_template('contact_page.html', form=form)
 
 if __name__ == '__main__':
