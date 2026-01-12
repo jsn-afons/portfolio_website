@@ -1,18 +1,40 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% from 'bootstrap5/form.html' import render_form %}
-    <header class="flex-grow-1 d-flex align-items-center py-5 mt-5">
-        <div class="container-xl px-4 px-md-5 py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h1 class="display-4 fw-bolder lh-1 text-dark mb-4">
-                        Get in Touch
-                    </h1>
-                    <div class="card border border-light-subtle shadow-sm rounded-4 p-4 p-md-5 bg-white">
-                        {{ render_form(form, button_style="primary fw-bold w-100 py-3 rounded-3") }}
-                        
-                    </div>
-                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                        
-{% endblock %}                       
+<header class="flex-grow-1 d-flex align-items-center py-5 mt-5" style="padding-top: 80px;">
+    <div class="container-xl px-4 px-md-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bolder">Let's Chat!</h1>
+                    <p class="text-muted">Have a project in mind? Send me a message.</p>
+                </div>
+
+                <div class="card border-0 shadow-lg rounded-4 p-4 bg-white">
+                    <form method="POST">
+                        {{ form.csrf_token }}
+
+                        <div class="form-floating mb-3">
+                            {{ form.name(class="form-control", placeholder="Name") }}
+                            {{ form.name.label }}
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            {{ form.email(class="form-control", placeholder="name@example.com") }}
+                            {{ form.email.label }}
+                        </div>
+
+                        <div class="form-floating mb-4">
+                            {{ form.message(class="form-control", placeholder="Message", style="height: 150px") }}
+                            {{ form.message.label }}
+                        </div>
+
+                        {{ form.submit(class="btn btn-primary btn-lg w-100 rounded-pill fw-bold") }}
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}

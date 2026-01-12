@@ -1,29 +1,37 @@
 [
-{
-        "title": "Text to Morse Code Converter",
-        "description": "A text based python project that converts user input text into morse code in the console.",
-        "image_url": "static/images/morse_code.png",
+    {
+        "title": "Debt Tracker",
+        "description": "A website that allows users to keep track of who owes them money and the current status of the debt with Flask login and authentication and CRUD functionality.",
+        "image_url": "static/images/debt_tracker.png",
+        "language": "Python",
+        "project_url": "https://github.com/jsn-afons/debt_manager.git"
+    },
+    {
+        "title": "Payment System",
+        "description": "A simple one product ecommerce website with a stripe payment system integrated.",
+        "image_url": "static/images/weather_app.png",
+        "language": "Python",
+        "project_url": "https://github.com/jsn-afons/payment_api.git"
+    },
+    {
+        "title": "To-Do List Application",
+        "description": "A simple to-do list application that allows users to add, delete, and mark tasks as completed.",
+        "image_url": "static/images/todo_list.png",
+        "language": "Python",
+        "project_url": "https://github.com/jsn-afons/to_do_list.git"
+    },
+    {
+        "title": "Personal Portfolio Website",
+        "description": "A personal portfolio website built with Flask. It's the website you are currently one.",
+        "image_url": "static/images/blog_website.png",
         "language": "Python",
         "project_url": "#"
     },
     {
-        "title": "Weather App",
-        "description": "A weather application that fetches real-time weather data from an API and displays it to the user.",
-        "image_url": "static/images/weather_app.png",
-        "language": "JavaScript",
-        "project_url": "#"
-    },
-{
-        "title": "To-Do List Application",
-        "description": "A simple to-do list application that allows users to add, delete, and mark tasks as completed.",
-        "image_url": "static/images/todo_list.png",
-        "language": "JavaScript",
-        "project_url": "#"
-    },
-  {
-        "title": "Personal Blog Website",
-        "description": "A personal blog website built with Flask, featuring user authentication and CRUD functionality for posts.",
-        "image_url": "static/images/blog_website.png",
+        "title": "Fifa Ultimate Team Price tracker",
+        "description": "I play alot of fifa ultimate team lately and since it uses a live market for players I created a price tracker that tracks the prices of players I am interested in and emails me with updates on when they are low or high.",
+        "image_url": "static/images/fifa_price_tracker.png",
         "language": "Python",
-        "project_url": "#"
-    }]
+        "project_url": "https://github.com/jsn-afons/matuidi_price_tracker.git"
+    }
+]

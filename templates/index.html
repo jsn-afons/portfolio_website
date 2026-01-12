@@ -1,73 +1,85 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <header class="flex-grow-1 d-flex align-items-center py-5 mt-5">
-        <div class="container-xl px-4 px-md-5 py-5">
-            <div class="row align-items-center gy-5">
-                <div class="col-md-6 text-center text-md-start">
-                    <div class="d-flex flex-column gap-3">
-                        <div class="d-inline-flex align-items-center justify-content-center justify-content-md-start">
-                            <span class="badge bg-primary-subtle rounded-pill text-uppercase px-3 py-2 fw-bold"
-                                style="letter-spacing: 0.05em; font-size: 0.75rem;">Jason</span>
-                        </div>
-                        <h1 class="display-4 fw-bolder lh-1 text-dark mb-0">
-                            Building <span class="text-primary">data driven</span> digital products with clean code.
-                        </h1>
-                        <p class="lead text-secondary mx-auto mx-md-0 mb-4" style="max-width: 600px;">
-                            I specialize in turning ideas into simple, functional, and scalable web experiences.
-                            From data analytics to AI-powered tools, I love creating solutions that actually solve problems.
-                        </p>
+<header class="flex-grow-1 d-flex align-items-center py-5 mt-5">
+    <div class="container-xl px-4 px-md-5 py-5">
+        <div class="row align-items-center gy-5">
+            <div class="col-md-6 text-center text-md-start">
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-inline-flex align-items-center justify-content-center justify-content-md-start">
+                        <span class="badge bg-primary-subtle rounded-pill text-uppercase px-3 py-2 fw-bold"
+                            style="letter-spacing: 0.05em; font-size: 0.75rem;">Jason</span>
                     </div>
-                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
-                        <a href="#projects" class="btn btn-primary fw-bold px-4 py-3 rounded-3 shadow hover-lift">
-                            See My Work
-                        </a>
-                        <a href="{{ url_for('contact') }}" class="btn btn-light border fw-bold px-4 py-3 rounded-3 text-dark">
-                            Contact Me
-                        </a>
-                    </div>
+                    <h1 class="display-4 fw-bolder lh-1 text-dark mb-0">
+                        Building <span class="text-primary">data driven</span> digital products with clean code.
+                    </h1>
+                    <p class="lead text-secondary mx-auto mx-md-0 mb-4" style="max-width: 600px;">
+                        I specialize in turning ideas into simple, functional, and scalable web experiences.
+                        From data analytics to AI-powered tools, I love creating solutions that actually solve problems.
+                    </p>
                 </div>
-                <div class="col-md-6">
-                    <div class="position-relative d-flex justify-content-center justify-content-md-end">
-                        <div class="position-absolute w-100 h-100 rounded-4" style="background: linear-gradient(to top right, rgba(19, 127, 236, 0.2), transparent); transform: rotate(3deg) scale(1.02); z-index: -1; inset: 0;"></div>
-                        <div class="ratio ratio-4x3 w-100 rounded-4 overflow-hidden shadow-lg bg-light" style="z-index: 1;">
-                            <div class="w-100 h-100" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVNASgwa23OmbrMv6ycv9aC0zf3XZxTtSOhb1TBq_IOqokJpTvuXjDYoeD6b9hwVfrWei7tJr3M9raXhi0GsqgdVvhGL6aHOa4Fh3zW87rx6jkyFNOCARvhpj7v6UF-KDFXtbigKAzg5L0oP0m5pJErxJ-8--lGmFjS8jfyGVrf6XS0Katok55-n7ncn_DcwmawapqDGrI9vMsU2KB36usd2nyyA8iKecRvmOuy-uN-Z9_2cMfIFNjY-fnvwiTAMjHNZBvvka9Jd4'); background-size: cover; background-position: center;"></div>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
+                    <a href="#projects" class="btn btn-primary fw-bold px-4 py-3 rounded-3 shadow hover-lift">
+                        See My Work
+                    </a>
+                    <a href="{{ url_for('contact') }}"
+                        class="btn btn-light border fw-bold px-4 py-3 rounded-3 text-dark">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="position-relative d-flex justify-content-center justify-content-md-end">
+                    <div class="position-absolute w-100 h-100 rounded-4"
+                        style="background: linear-gradient(to top right, rgba(19, 127, 236, 0.2), transparent); transform: rotate(3deg) scale(1.02); z-index: -1; inset: 0;">
+                    </div>
+                    <div class="ratio ratio-4x3 w-100 rounded-4 overflow-hidden shadow-lg bg-light" style="z-index: 1;">
+                        <div class="w-100 h-100"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVNASgwa23OmbrMv6ycv9aC0zf3XZxTtSOhb1TBq_IOqokJpTvuXjDYoeD6b9hwVfrWei7tJr3M9raXhi0GsqgdVvhGL6aHOa4Fh3zW87rx6jkyFNOCARvhpj7v6UF-KDFXtbigKAzg5L0oP0m5pJErxJ-8--lGmFjS8jfyGVrf6XS0Katok55-n7ncn_DcwmawapqDGrI9vMsU2KB36usd2nyyA8iKecRvmOuy-uN-Z9_2cMfIFNjY-fnvwiTAMjHNZBvvka9Jd4'); background-size: cover; background-position: center;">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <section class="py-5 bg-white" id="projects">
-        <div class="container-xl px-4 px-md-5">
-            <div class="text-center mb-5 d-flex flex-column gap-2 align-items-center">
-                <h2 class="display-6 fw-bold text-dark">Featured Projects</h2>
-                <p class="text-secondary" style="max-width: 600px;">A selection of my recent work, showcasing my skills in frontend and backend development.</p>
-            </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                {% for project in projects %}
-                <div class="col">
-                    <div class="card h-100 border border-light-subtle rounded-4 shadow-sm project-card bg-white overflow-hidden">
-                        <div class="ratio ratio-16x9 bg-secondary-subtle">
-                            <div class="w-100 h-100" style="background-image: url('{{ project['image_url']}}'); background-size: cover; background-position: center;"></div>
+<section class="py-5 bg-white" id="projects">
+    <div class="container-xl px-4 px-md-5">
+        <div class="text-center mb-5 d-flex flex-column gap-2 align-items-center">
+            <h2 class="display-6 fw-bold text-dark">Featured Projects</h2>
+            <p class="text-secondary" style="max-width: 600px;">A selection of my recent work, showcasing my skills in
+                frontend and backend development.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {% for project in projects %}
+            <div class="col">
+                <div
+                    class="card h-100 border border-light-subtle rounded-4 shadow-sm project-card bg-white overflow-hidden">
+                    <div class="ratio ratio-16x9 bg-secondary-subtle">
+                        <div class="w-100 h-100"
+                            style="background-image: url('{{ project['image_url']}}'); background-size: cover; background-position: center;">
                         </div>
-                        <div class="card-body p-4 d-flex flex-column gap-3">
-                            <div class="flex-grow-1">
-                                <h3 class="h5 fw-bold text-dark mb-2">{{ project["title"] }}</h3>
-                                <p class="text-secondary small lh-base mb-0"> {{ project["description"] }} </p>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between pt-3 border-top border-light-subtle mt-auto">
-                                <span class="badge bg-primary-subtle rounded px-2 py-1 fw-semibold">{{ project["language"] }}</span>
-                                <a class="text-dark fw-bold small text-decoration-none hover-primary d-flex align-items-center gap-1" href="#">
-                                    View Project <span class="material-symbols-outlined fs-6">arrow_outward</span>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column gap-3">
+                        <div class="flex-grow-1">
+                            <h3 class="h5 fw-bold text-dark mb-2">{{ project["title"] }}</h3>
+                            <p class="text-secondary small lh-base mb-0"> {{ project["description"] }} </p>
+                        </div>
+                        <div
+                            class="d-flex align-items-center justify-content-between pt-3 border-top border-light-subtle mt-auto">
+                            <span class="badge bg-primary-subtle rounded px-2 py-1 fw-semibold">{{ project["language"]
+                                }}</span>
+                            <a class="text-dark fw-bold small text-decoration-none hover-primary d-flex align-items-center gap-1"
+                                href="{{ project['project_url'] }}">
+                                View Project <span class="material-symbols-outlined fs-6">arrow_outward</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                {% endfor %}
             </div>
+            {% endfor %}
         </div>
-    </section>
+    </div>
+</section>
 {% endblock %}
