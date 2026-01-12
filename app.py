@@ -37,7 +37,7 @@ def contact():
         with smtplib.SMTP(smtp_server, smtp_port) as server:
             server.starttls()
             server.login(smtp_username, smtp_password)
-            server.sendmail(smtp_username, smtp_recipient, message=f"Subject: Contact Form Submission\n\nName: {form.name.data}\nEmail: {form.email.data}\nMessage: {form.message.data}")
+            server.sendmail(smtp_username, smtp_recipient, f"Subject: Contact Form Submission\n\nName: {form.name.data}\nEmail: {form.email.data}\nMessage: {form.message.data}")
             print("Email sent successfully!")
 
         return redirect(url_for('home'))
